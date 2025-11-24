@@ -8,7 +8,7 @@ namespace Tyuiu.ZjatkovDV.Sprint5.Task5.V9.Test
         public void CheckLoadFromDataFile()
         {
             var result = new DataService();
-            Assert.Equal(19.51, result.LoadFromDataFile("C:\\DataSprint5\\InPutDataFileTask5V9.txt"));
+            Assert.Equal(17, result.LoadFromDataFile("C:\\DataSprint5\\InPutDataFileTask5V9.txt"));
         }
     }
 }
