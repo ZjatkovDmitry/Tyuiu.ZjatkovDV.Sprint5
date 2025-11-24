@@ -8,7 +8,7 @@ namespace Tyuiu.ZjatkovDV.Sprint5.Task0.V3.Test
         public void CheckSaveToFileTextData()
         {
             var result = new DataService();
-            Assert.Equal(true, new FileInfo(@"D:\Projects\“»”\Tyuiu.ZjatkovDV.Sprint5\Tyuiu.ZjatkovDV.Sprint5.Task0.V3\bin\Debug\net8.0\OutPutFileTask0.txt").Exists);
+            Assert.Equal(true, new FileInfo($@"{Path.GetTempPath()}\OutPutFileTask0.txt").Exists);
         }
     }
 }

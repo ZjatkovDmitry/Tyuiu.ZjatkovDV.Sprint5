@@ -25,7 +25,7 @@ int x = 3;
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine(result.SaveToFileTextData(x).ToString());
 
-Console.WriteLine(File.ReadAllText("OutPutFileTask0.txt"));
+Console.WriteLine(File.ReadAllText($@"{Path.GetTempPath()}\OutPutFileTask0.txt"));
 
 Console.WriteLine(new string('*', 75));
 Console.ReadKey();
