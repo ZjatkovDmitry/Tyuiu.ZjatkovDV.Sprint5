@@ -19,6 +19,7 @@ namespace Tyuiu.ZjatkovDV.Sprint5.Task7.V13.Lib
             File.WriteAllText(path, Regex.Replace(text, "[a-z]", ""));
 
             return path;
+
         }
     }
 }
