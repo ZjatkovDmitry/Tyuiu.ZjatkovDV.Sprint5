@@ -10,9 +10,10 @@ namespace Tyuiu.ZjatkovDV.Sprint5.Task5.V9.Lib
             double[] numbers = File.ReadAllText(path)
                       .Split(' ', StringSplitOptions.RemoveEmptyEntries)
                       .Select(s => double.Parse(s, CultureInfo.InvariantCulture))
+                      .Where(s => s % 1 == 0)
                       .ToArray();
 
-            return Math.Round(numbers.Max(), 3);
+            return numbers.Max();
         }
     }
 }
