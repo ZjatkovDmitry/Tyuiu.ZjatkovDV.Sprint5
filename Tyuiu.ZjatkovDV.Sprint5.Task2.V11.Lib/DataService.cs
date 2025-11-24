@@ -27,7 +27,7 @@ namespace Tyuiu.ZjatkovDV.Sprint5.Task2.V11.Lib
                             rowValues.Add(matrix[i, j].ToString());
                     }
 
-                    writer.WriteLine(string.Join("; ", rowValues));
+                    writer.WriteLine(string.Join(";", rowValues));
                 }
             }
 
