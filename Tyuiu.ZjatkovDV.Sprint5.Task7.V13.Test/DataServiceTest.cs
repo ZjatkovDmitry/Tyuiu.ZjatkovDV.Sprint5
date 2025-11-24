@@ -9,7 +9,6 @@ namespace Tyuiu.ZjatkovDV.Sprint5.Task7.V13.Test
         {
             var result = new DataService();
             Assert.Equal(true, new FileInfo($@"{Path.GetTempPath()}\OutPutDataFileTask7V13.txt").Exists);
-
         }
     }
 }
